@@ -40,6 +40,8 @@ public class RFR900 extends CordovaPlugin {
                 return false;
             }
         } else {
+            pluginResult = new PluginResult(PluginResult.Status.OK, "NOTHING");
+            callbackContext.sendPluginResult(pluginResult);
             return false;
         }
     }
