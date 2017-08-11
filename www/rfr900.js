@@ -1,6 +1,6 @@
 module.exports = {
     test: function (successCallback, errorCallback) {
-        cordova.exec(successCallback, errorCallback, "RFR900", "test", [1]);
+        cordova.exec(successCallback, errorCallback, "rfr900", "test", [1]);
     }
 };
 
