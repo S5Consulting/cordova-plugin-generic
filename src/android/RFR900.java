@@ -18,12 +18,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.util.logging.Level;
-
 
 public class RFR900 extends CordovaPlugin {
-    private AndroidLogger logger;
-
     private CallbackContext _eventCallback;
     private Exception _exception;
 
@@ -32,7 +28,7 @@ public class RFR900 extends CordovaPlugin {
         PluginResult pluginResult = null;
         _exception = null;
         
-        if (action.equals("open")) {
+        if (action.equals("test")) {
 
             if (true) {
                 pluginResult = new PluginResult(PluginResult.Status.OK, "OPEN");
@@ -42,8 +38,7 @@ public class RFR900 extends CordovaPlugin {
                 pluginResult = new PluginResult(PluginResult.Status.ERROR, _exception.getMessage());
                 callbackContext.sendPluginResult(pluginResult);
                 return false;
-            } 
-
+            }
         }
     }
 }
