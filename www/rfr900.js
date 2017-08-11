@@ -1,5 +1,12 @@
 module.exports = {
-    open: function (paramters) {
-        cordova.exec(successCallback, errorCallback, "RFR900", "open", [1]);
+    test: function (successCallback, errorCallback) {
+        cordova.exec(successCallback, errorCallback, "RFR900", "test", [1]);
     }
 };
+
+
+
+
+
+
+
